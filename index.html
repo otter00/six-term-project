@@ -7,11 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/app.css">
 
     <title>Sign In</title>
 </head>
 
 <body>
+    <div class="container">
+
+        <form name="form1" id="login__form" method="POST" action="/apply" onsubmit="return true">
+            <div class=" login-form__container" style="background-image: url('assets/imgs/starwars_intro.jpg');">
+                <div class="login-form__wrapper">
+                    <span class="login-form__title">My account</span>
+
+                    <div class="login-form validate-form">
+
+                        <div class="wrap-input validate-input" data-validate="Enter username">
+                            <input class="input" id="login__input" type="text" name="username" minlength=2
+                                placeholder="Type username" autofocus required>
+                        </div>
+
+                        <div class="wrap-input validate-input" data-validate="Enter password">
+                            <input class="input" id="password__input" type="password" minlength=5 name="password"
+                                placeholder="Type password" required>
+                        </div>
+
+                        <div class="wrap-input validate-input" data-validate="Enter email">
+                            <input class="input" id="email__input" type="email" name="email" placeholder="Type email"
+                                required>
+                        </div>
+
+                        <div class="wrap-input validate-input" data-validate="Enter your phone">
+                            <input class="input" id="phone__input" type="tel" pattern="\d{6,20}" minlength=6
+                                maxlength=20 name="phone number" placeholder="Type your phone" required>
+                        </div>
+
+                        <div class="wrap-input validate-input gender" data-validate="Choose your gender">
+                            <div class="gender__radio">
+                                <label for="man">Male</label>
+                                <input class="input" id="genderM" type="radio" name="gender" value="m">
+                            </div>
+                            <div class="gender__radio">
+                                <label for="women">Female</label>
+                                <input class="input" id="genderW" type="radio" name="gender" value="w">
+                            </div>
+                        </div>
+
+                        <div class="container-login-form__btn">
+                            <button class="login-form__btn" type="submit">Sign
+                                up</button>
+                        </div>
+
+                        <div id="errorMsg" class="errors__info"></div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
 
     <script src="JS/main.js"></script>
 </body>
