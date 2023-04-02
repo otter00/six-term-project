@@ -77,6 +77,7 @@ button.addEventListener('click', ()=>{
         alert(`Добро пожаловать отсюда!`);
         location.reload(); //перезагружаем страницу, если всё введено корректно, 
         //чтобы очистить поля для дальнейшего ввода
+        window.location.href = 'pages/guide.html';
     }
 
     errors = []; //чистим массив

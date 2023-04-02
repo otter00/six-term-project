@@ -4,13 +4,11 @@ html {
   min-width: 300px;
   margin: 0 auto;
 }
-
-body {
+html body {
   font-family: "Roboto", "Source Sans Pro", sans-serif;
   max-width: 100%;
 }
-
-.main {
+html body .main {
   display: grid;
   grid-template-rows: repeat(3, max-content);
   row-gap: 60px;
@@ -44,9 +42,9 @@ h2 {
   min-height: 100vh;
   /*     ELEMS-POSITIONING    */
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 15px;
   /*      BG-POSITIONING     */
   background-repeat: no-repeat;
@@ -56,16 +54,14 @@ h2 {
   z-index: 1;
   /* in order not to cover log-in form */
 }
-
-.login-form__wrapper {
+.login-form__container .login-form__wrapper {
   width: 500px;
   border-radius: 10px;
   overflow: hidden;
   background: 0 0;
   padding: 30px 0 50px 0;
 }
-
-.login-form__title {
+.login-form__container .login-form__wrapper .login-form__title {
   padding-bottom: 18px;
   font-family: Ubuntu-Bold;
   font-size: 56px;
@@ -97,8 +93,7 @@ h2 {
   border-bottom: 1px solid #e6e6e6;
   padding: 29px 0;
 }
-
-.input {
+.wrap-input .input {
   font-family: Ubuntu-Regular;
   font-size: 20px;
   color: rgb(4, 55, 0);
@@ -119,35 +114,31 @@ h2 {
   display: flex;
   padding: 29px 10px 29px 80px;
 }
-
-.gender__radio {
-  /* display: flex;
-  justify-content: space-around; */
+.gender .gender__radio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-right: 25px;
 }
-.gender__radio label {
+.gender .gender__radio label {
   margin-right: 3px;
 }
 
 .container-login-form__btn {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 32px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-
-.login-form__btn {
+.container-login-form__btn .login-form__btn {
+  display: flex;
+  justify-content: center;
   font-family: Ubuntu-Bold;
   font-size: 18px;
   color: black;
   font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding: 0 20px;
   min-width: 160px;

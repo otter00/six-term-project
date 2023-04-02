@@ -1,0 +1,13 @@
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin backgroundPosition {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    z-index: 1;
+}
