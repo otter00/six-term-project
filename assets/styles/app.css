@@ -1,4 +1,11 @@
 /*      GENERAL     */
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   max-width: 1600px;
   min-width: 300px;
@@ -185,4 +192,11 @@ textarea {
   color: rgb(127, 3, 3);
   display: flex;
   justify-content: center;
+}
+
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }/*# sourceMappingURL=app.css.map */
