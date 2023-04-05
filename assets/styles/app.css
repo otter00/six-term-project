@@ -133,11 +133,12 @@ h2 {
 .container-login-form__btn {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 20px;
 }
-.container-login-form__btn .login-form__btn {
+.container-login-form__btn .login-form__btn,
+.container-login-form__btn .login-form__btn-fake {
   display: flex;
   justify-content: center;
   font-family: Handrawn;
@@ -180,7 +181,8 @@ textarea {
 }
 
 /*     CURSOR-SETTINGS    */
-.login-form__btn:hover {
+.login-form__btn:hover,
+.login-form__btn-fake:hover {
   cursor: pointer;
 }
 

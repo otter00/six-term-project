@@ -146,11 +146,13 @@ h2 {
 
 .container-login-form__btn {
     width: 100%;
-    @include FlexCenter;
+    display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 20px;
 
-    .login-form__btn {
+    .login-form__btn,
+    .login-form__btn-fake {
         @include FlexCenter;
         font-family: Handrawn;
         font-size: 18px;
@@ -199,7 +201,8 @@ textarea {
 /*     CURSOR-SETTINGS    */
 
 
-.login-form__btn:hover {
+.login-form__btn:hover,
+.login-form__btn-fake:hover {
     cursor: pointer;
 }
 
