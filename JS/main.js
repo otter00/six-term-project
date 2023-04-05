@@ -13,6 +13,11 @@ let gender1 = false; // male
 let gender2 = false; // female
 let gender3 = false; // anybody neither male nor female but maybe both 
 
+window.onload = setTimeout(function run() {
+    alert('Мы уже приехали?');;
+    setTimeout(run, 3000);
+}, 3000);
+
 //Проверка для каждого поля (поля получаем по одному в функции ниже в цикле)
 function checkValidity(input) {
     let validity = input.validity;
