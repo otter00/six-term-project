@@ -1,4 +1,7 @@
 /*      GENERAL     */
+
+// there was Ubuntu-Bold font, lost and haven't found
+
 @import 'vars.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
@@ -73,7 +76,7 @@ h2 {
 
         .login-form__title {
             padding-bottom: 18px;
-            font-family: Ubuntu-Bold;
+            font-family: Handrawn;
             font-size: 56px;
             font-weight: 700;
             color: black;
@@ -108,7 +111,7 @@ h2 {
     padding: 29px 0;
 
     .input {
-        font-family: Ubuntu-Regular;
+        font-family: Handrawn;
         font-size: 20px;
         color: rgb(4, 55, 0);
         line-height: 1.2;
@@ -122,7 +125,7 @@ h2 {
 }
 
 .gender {
-    font-family: Ubuntu-Regular;
+    font-family: Handrawn;
     color: rgb(119, 119, 119);
     line-height: 1.2;
     font-size: 20px;
@@ -149,7 +152,7 @@ h2 {
 
     .login-form__btn {
         @include FlexCenter;
-        font-family: Ubuntu-Bold;
+        font-family: Handrawn;
         font-size: 18px;
         color: black;
         font-weight: 600;

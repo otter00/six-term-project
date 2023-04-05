@@ -70,7 +70,7 @@ h2 {
 }
 .login-form__container .login-form__wrapper .login-form__title {
   padding-bottom: 18px;
-  font-family: Ubuntu-Bold;
+  font-family: Handrawn;
   font-size: 56px;
   font-weight: 700;
   color: black;
@@ -101,7 +101,7 @@ h2 {
   padding: 29px 0;
 }
 .wrap-input .input {
-  font-family: Ubuntu-Regular;
+  font-family: Handrawn;
   font-size: 20px;
   color: rgb(4, 55, 0);
   line-height: 1.2;
@@ -114,7 +114,7 @@ h2 {
 }
 
 .gender {
-  font-family: Ubuntu-Regular;
+  font-family: Handrawn;
   color: rgb(119, 119, 119);
   line-height: 1.2;
   font-size: 20px;
@@ -140,7 +140,7 @@ h2 {
 .container-login-form__btn .login-form__btn {
   display: flex;
   justify-content: center;
-  font-family: Ubuntu-Bold;
+  font-family: Handrawn;
   font-size: 18px;
   color: black;
   font-weight: 600;

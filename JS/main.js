@@ -4,11 +4,13 @@ let button = document.querySelector(".login-form__btn");
 let form = document.querySelector('form');
 let errors = [];
 
-let genderM = document.getElementById('genderM');
-let genderW = document.getElementById('genderW');
+const genderM = document.getElementById('genderM');
+const genderW = document.getElementById('genderW');
+const genderA = document.getElementById('genderA');
 
-let gender1 = false;
-let gender2 = false;
+let gender1 = false; // male
+let gender2 = false; // female
+let gender3 = false; // anybody neither male nor female but maybe both 
 
 //Проверка для каждого поля (поля получаем по одному в функции ниже в цикле)
 function checkValidity(input) {
@@ -51,12 +53,19 @@ button.addEventListener('click', ()=>{
     if (genderM.checked) {
         gender1 = true; 
         gender2 = false;
+        gender3 = false;
     }
     if (genderW.checked) {
         gender2 = true; 
         gender1 = false;
+        gender3 = false;
     }
-    if ((gender1 == false) && (gender2 == false)) {
+    if (genderA.checked) {
+        gender3 = true;
+        gender2 = false; 
+        gender1 = false;
+    }
+    if ((gender1 == false) && (gender2 == false) && (gender3 == false)) {
         errors.push(`Поле gender не заполнено!`);
     }
 
