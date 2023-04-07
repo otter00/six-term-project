@@ -5,11 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link rel="stylesheet" href="../assets/styles/app.css">
+
+    <title>НеTravel</title>
 </head>
 
 <body>
 
+    <header class="header">
+        <div class="header__container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img class="logo" src="" alt="logo" /></a>
+                <div class="header__burger"><span class="header__burger_Span"></span></div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a class="header__link" href="#">Экскурсии</a></li>
+                        <li><a class="header__link" href="#">Достопримечательности</a></li>
+                        <li><a class="header__link" href="#">Локации</a></li>
+                        <li><a class="header__link" href="#">Фотогалерея</a></li>
+                        <li><a class="header__link" href="../index.html">Контакты</a></li>
+                        <li><a class="header__link" href="../index.html">Выйти</a></li>
+                        <div class="search-container">
+                            <form action="/search">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="../JS/header.js"></script>
 </body>
 
 </html>
