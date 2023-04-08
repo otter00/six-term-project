@@ -1,0 +1,44 @@
+@import 'vars.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+    @include reset;
+    font-family: Handrawn;
+}
+
+.hero-block__container {
+    display: block;
+    padding: 10vh;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+
+    .hero__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+
+        .hero__title {
+            margin: auto;
+
+            .title__text {
+                font-family: 'Delicious Handrawn', cursive;
+                color: red;
+                font-size: 3em;
+            }
+        }
+
+        .hero__picture {
+            &>img {
+                width: 35vw;
+                padding-bottom: 2%;
+            }
+
+            &>figcaption {
+                font-family: 'Delicious Handrawn', cursive;
+                color: red;
+                font-size: 1.2em;
+                margin: auto;
+            }
+        }
+    }
+}
