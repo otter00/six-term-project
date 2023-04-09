@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-    setTimeout(() => alert('Здравствуйте! Наши двери всегда для вас закрыты - выходите!'), 1000);
+    setTimeout(() => alert('Здравствуйте! Наши двери всегда для вас открыты - выходите!'), 1000);
 });
