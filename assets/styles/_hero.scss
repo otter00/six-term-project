@@ -7,8 +7,11 @@
     font-family: Handrawn;
 }
 
+.hidden {
+    display: none;
+}
+
 .hero-block__container {
-    display: block;
     padding: 10vh;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 
