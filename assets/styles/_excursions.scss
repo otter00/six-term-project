@@ -1,0 +1,27 @@
+@import 'vars.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+    @include reset;
+    font-family: Handrawn;
+}
+
+.hidden {
+    display: none;
+}
+
+.excursions__container {
+    padding: 10vh;
+
+    .excursions__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+
+        .excursion__card {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

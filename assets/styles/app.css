@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @font-face {
   font-family: "Handrawn";
   src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
@@ -458,4 +459,34 @@ button[type=submit]:hover {
   color: red;
   font-size: 1.2em;
   margin: auto;
+}
+
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Handrawn;
+}
+
+.hidden {
+  display: none;
+}
+
+.excursions__container {
+  padding: 10vh;
+}
+.excursions__container .excursions__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+.excursions__container .excursions__wrapper .excursion__card {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=app.css.map */
