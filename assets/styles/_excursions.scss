@@ -17,11 +17,16 @@
     .excursions__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5px;
 
         .excursion__card {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+
+            border: 1px solid white;
+
+            color: white;
         }
     }
 }

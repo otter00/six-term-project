@@ -13,7 +13,6 @@
 
 .hero-block__container {
     padding: 10vh;
-    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 
     .hero__wrapper {
         display: grid;
@@ -25,8 +24,8 @@
 
             .title__text {
                 font-family: 'Delicious Handrawn', cursive;
-                color: red;
-                font-size: 3em;
+                color: rgb(222, 212, 212);
+                font-size: 4em;
             }
         }
 
@@ -38,8 +37,8 @@
 
             &>figcaption {
                 font-family: 'Delicious Handrawn', cursive;
-                color: red;
-                font-size: 1.2em;
+                color: rgb(255, 255, 255);
+                font-size: 1.4em;
                 margin: auto;
             }
         }
