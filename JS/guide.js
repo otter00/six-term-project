@@ -6,9 +6,23 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 let heroBlock = document.querySelector('.hero-block__container');
 let excursionsBlock = document.querySelector('.excursions__container');
+let attractionsBlock = document.querySelector('.attractions__container');
 
 // Скрываем-открываем блок в зависимости от пришедшего запроса
 document.querySelector('.excursions').addEventListener('click', ()=>{
-    heroBlock.classList.toggle("hidden");
-    excursionsBlock.classList.toggle("hidden");
+    heroBlock.classList.add("hidden");
+    excursionsBlock.classList.remove("hidden");
+    attractionsBlock.classList.add("hidden");
+})
+
+document.querySelector('.attr').addEventListener('click', ()=>{
+    heroBlock.classList.add("hidden");
+    excursionsBlock.classList.add("hidden");
+    attractionsBlock.classList.remove("hidden");
+})
+
+document.querySelector('.fa').addEventListener('click', ()=>{
+    heroBlock.classList.remove("hidden");
+    excursionsBlock.classList.add("hidden");
+    attractionsBlock.classList.add("hidden");
 })

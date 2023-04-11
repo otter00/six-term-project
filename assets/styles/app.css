@@ -504,6 +504,26 @@ button[type=submit]:hover {
   font-weight: normal;
   font-style: normal;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Handrawn;
+  overflow: hidden;
+}
+
 body {
   background-image: url("../imgs/backgrnd.jpg");
+}
+
+.attractions__container {
+  padding: 10vh;
+}
+.attractions__container .attractions__wrapper {
+  padding: 2vh;
+}
+.attractions__container .attractions__wrapper .title__text {
+  font-family: "Delicious Handrawn", cursive;
+  color: rgb(222, 212, 212);
+  font-size: 6em;
 }/*# sourceMappingURL=app.css.map */

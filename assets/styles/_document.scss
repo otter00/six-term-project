@@ -1,5 +1,11 @@
 @import 'vars.scss';
 
+* {
+    @include reset;
+    font-family: Handrawn;
+    overflow: hidden;
+}
+
 body {
     background-image: url('../imgs/backgrnd.jpg');
 }
