@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @font-face {
   font-family: "Handrawn";
   src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
@@ -526,4 +527,43 @@ body {
   font-family: "Delicious Handrawn", cursive;
   color: rgb(222, 212, 212);
   font-size: 6em;
+}
+
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Handrawn;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery__container {
+  padding: 20vh;
+}
+.gallery__container .gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-bottom: 25vh;
+}
+.gallery__container .gallery__wrapper .gallery__card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  color: white;
+}
+.gallery__container .mainteinance__title {
+  font-family: "Delicious Handrawn", cursive;
+  color: rgb(222, 212, 212);
+  font-size: 3em;
 }/*# sourceMappingURL=app.css.map */
