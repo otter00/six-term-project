@@ -6,6 +6,17 @@
     overflow: hidden;
 }
 
+// Change page content
+
+.tabs>section:not(.tabs__links) {
+    display: none;
+    order: 1;
+}
+
+.tabs>section:target {
+    display: block;
+}
+
 body {
     background-image: url('../imgs/backgrnd.jpg');
 }

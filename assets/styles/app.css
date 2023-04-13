@@ -316,6 +316,7 @@ button[type=submit]:hover {
 
 .fa {
   font-size: 20px;
+  color: white;
 }
 .fa:hover {
   cursor: pointer;
@@ -440,7 +441,7 @@ button[type=submit]:hover {
 }
 
 .hero-block__container {
-  padding: 10vh;
+  padding: 7vh;
 }
 .hero-block__container .hero__wrapper {
   display: grid;
@@ -513,6 +514,15 @@ button[type=submit]:hover {
   overflow: hidden;
 }
 
+.tabs > section:not(.tabs__links) {
+  display: none;
+  order: 1;
+}
+
+.tabs > section:target {
+  display: block;
+}
+
 body {
   background-image: url("../imgs/backgrnd.jpg");
 }
@@ -547,7 +557,7 @@ body {
 }
 
 .gallery__container {
-  padding: 20vh;
+  padding: 10vh;
 }
 .gallery__container .gallery__wrapper {
   display: grid;

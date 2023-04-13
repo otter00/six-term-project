@@ -14,22 +14,22 @@
     <title>НеTravel</title>
 </head>
 
-<body>
+<body class="tabs">
 
     <header class="header">
         <div class="header__container">
-            <div class="header__body">
-                <i href="#" class="header__logo fa fa-globe tab" aria-hidden="true"></i>
+            <div class="header__body tabs__links">
+                <a href="#content-1" class="header__logo fa fa-globe" aria-hidden="true"></a>
                 <div class="header__burger"><span class="header__burger_Span"></span></div>
                 <nav class="header__menu">
                     <ul class="header__list">
-                        <li><a class="header__link excursions tab" href="#">Экскурсии</a></li>
-                        <li><a class="header__link attr tab" href="#">Достопримечательности</a></li>
-                        <li><a class="header__link locations tab" href="#">Локации</a></li>
-                        <li><a class="header__link gallery tab" href="#">Фотогалерея</a></li>
-                        <li><a class="header__link contacts tab" href="#">Контакты</a></li>
-                        <li><a class="header__link account tab" href="#">Мой аккаунт</a></li>
-                        <li><a class="header__link logout tab" href="../index.html">Выйти</a></li>
+                        <li><a class="header__link excursions" href="#content-2">Экскурсии</a></li>
+                        <li><a class="header__link attr" href="#content-3">Достопримечательности</a></li>
+                        <li><a class="header__link locations" href="#">Локации</a></li>
+                        <li><a class="header__link gallery" href="#content-4">Фотогалерея</a></li>
+                        <li><a class="header__link contacts" href="#">Контакты</a></li>
+                        <li><a class="header__link account" href="#">Мой аккаунт</a></li>
+                        <li><a class="header__link logout" href="../index.html">Выйти</a></li>
                         <div class="search-container">
                             <form action="/search">
                                 <input type="text" placeholder="Search...">
@@ -42,7 +42,7 @@
         </div>
     </header>
 
-    <section class="hero-block__container content">
+    <section class="hero-block__container" id="content-1">
         <div class="hero__wrapper">
             <div class="hero__title">
                 <span class="title__text">НеTravel - наш ужасный сервис всегда на страже вашего дискомфорта!</span>
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <section class="excursions__container content hidden">
+    <section class="excursions__container" id="content-2">
         <div class="excursions__wrapper">
 
             <div class="excursion__card first-card">
@@ -114,13 +114,13 @@
         </div>
     </section>
 
-    <section class="attractions__container content hidden">
+    <section class="attractions__container" id="content-3">
         <div class="attractions__wrapper">
             <span class="title__text">Никуда не едь - побудь дома!</span>
         </div>
     </section>
 
-    <section class="gallery__container content hidden">
+    <section class="gallery__container" id="content-4">
         <div class="gallery__wrapper">
 
             <div class="gallery__card first-card">
