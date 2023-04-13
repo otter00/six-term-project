@@ -514,6 +514,10 @@ button[type=submit]:hover {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 .tabs > section:not(.tabs__links) {
   display: none;
   order: 1;
