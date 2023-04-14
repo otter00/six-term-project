@@ -1,31 +1,31 @@
 const Json = `[{
     "url":"",
-    "title":"first",
-    "about":"about",
+    "title":"Олимп",
+    "about":"Потухший вулкан на Марсе, самая высокая гора в Солнечной системе. Высота Олимпа - 27 км к его основанию.",
     "class":"first"
 },{
     "url":"",
-    "title":"second",
+    "title":"Пещера Светлячков",
     "about":"about",
     "class":"second"
 },{
     "url":"",
-    "title":"third",
+    "title":"Рорайма",
     "about":"about",
     "class":"third"
 },{
     "url":"",
-    "title":"fourth",
+    "title":"Галактика «Сомбреро»",
     "about":"about",
     "class":"fourth"
 },{
     "url":"",
-    "title":"fifth",
+    "title":"Беспин",
     "about":"about",
     "class":"fifth"
 },{
     "url":"",
-    "title":"sixth",
+    "title":"Брайт-Фоллс",
     "about":"about",
     "class":"sixth"
 }]`;
@@ -40,14 +40,20 @@ document.addEventListener('DOMContentLoaded', function (e) {
         excContent += 
         `<div class="excursion__card ${exc.class}-card">
             <img src=${exc.url} alt="exc__pic">
-        
-            <div class="exc__info">
-                <span class="exc__title">${exc.title}</span>
-            <p class="exc__about">${exc.about}</p>
-            </div>
+
+            <details class="exc__info">
+                <summary class="exc__title">${exc.title}</summary>
+                <p class="exc__about">${exc.about}</p>
+            </details>
         </div>`;
     }
     //console.log(excContent);
 
     document.querySelector('.excursions__wrapper').innerHTML = excContent;
 });
+
+        
+            // <div class="exc__info">
+            //     <span class="exc__title">${exc.title}</span>
+            //     <p class="exc__about">${exc.about}</p>
+            // </div>

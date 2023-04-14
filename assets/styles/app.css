@@ -499,6 +499,20 @@ button[type=submit]:hover {
   border: 1px solid white;
   color: white;
 }
+.excursions__container .excursions__wrapper .excursion__card .exc__info > * {
+  font-family: "Delicious Handrawn", cursive;
+}
+.excursions__container .excursions__wrapper .excursion__card .exc__info .exc__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+  font-size: 20px;
+  text-shadow: 0 2px 0 black, 0 2px 0 black, -2px 0 0 black, 0 -2px 0 black;
+}
+.excursions__container .excursions__wrapper .excursion__card .exc__info .exc__about {
+  padding: 2%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 @font-face {
   font-family: "Handrawn";
