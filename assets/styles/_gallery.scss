@@ -19,15 +19,25 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-gap: 5px;
-        margin-bottom: 25vh;
+        margin-bottom: 20vh;
 
         .gallery__card {
             display: flex;
             flex-direction: column;
 
             border: 1px solid white;
+            padding: 5%;
 
             color: white;
+
+            .exc__title {
+                display: flex;
+                justify-content: center;
+            }
+
+            &>* {
+                margin: auto;
+            }
         }
     }
 

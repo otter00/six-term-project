@@ -1,32 +1,32 @@
 const galleryJson = `[{
     "url":"",
     "title":"first",
-    "about":"about",
+    "about":"to be or not to be...",
     "class":"first"
 },{
     "url":"",
     "title":"second",
-    "about":"about",
+    "about":"to be or not to be...",
     "class":"second"
 },{
     "url":"",
     "title":"third",
-    "about":"about",
+    "about":"to be or not to be...",
     "class":"third"
 },{
     "url":"",
     "title":"fourth",
-    "about":"about",
+    "about":"to be or not to be...",
     "class":"fourth"
 },{
     "url":"",
     "title":"fifth",
-    "about":"about",
+    "about":"to be or not to be...",
     "class":"fifth"
 },{
     "url":"",
     "title":"sixth",
-    "about":"about",
+    "about":"to be or not to be...",
     "class":"sixth"
 }]`;
 

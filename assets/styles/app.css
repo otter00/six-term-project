@@ -582,13 +582,21 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 5px;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
 }
 .gallery__container .gallery__wrapper .gallery__card {
   display: flex;
   flex-direction: column;
   border: 1px solid white;
+  padding: 5%;
   color: white;
+}
+.gallery__container .gallery__wrapper .gallery__card .exc__title {
+  display: flex;
+  justify-content: center;
+}
+.gallery__container .gallery__wrapper .gallery__card > * {
+  margin: auto;
 }
 .gallery__container .mainteinance__title {
   font-family: "Delicious Handrawn", cursive;
