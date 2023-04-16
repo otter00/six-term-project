@@ -12,19 +12,22 @@
 }
 
 .excursions__container {
-    padding: 10vh;
+    padding: 7vh 10vh 0 20vh;
+    margin: auto;
 
     .excursions__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 5px;
+        grid-gap: 9px;
 
         .excursion__card {
             display: flex;
             flex-direction: column;
 
-            border: 1px solid white;
+            width: 70%;
+
+            border: 2px dotted white;
 
             color: white;
 
@@ -33,20 +36,31 @@
             }
 
             .exc__info {
+                background-color: rgba(255, 255, 255, 0.3);
+
                 .exc__title {
                     display: flex;
                     justify-content: center;
-                    margin-bottom: 2vh;
+                    padding-bottom: 2vh;
 
                     font-size: 20px;
                     text-shadow: 0 2px 0 black, 0 2px 0 black, -2px 0 0 black, 0 -2px 0 black;
                 }
 
                 .exc__about {
+                    display: none;
                     padding: 2%;
-                    background-color: rgba(255, 255, 255, 0.3);
                 }
+            }
+
+            img {
+                object-fit: contain;
             }
         }
     }
+}
+
+.small__pic {
+    width: 25vh;
+    margin-left: 55px;
 }

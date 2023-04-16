@@ -28,6 +28,10 @@
             border: 1px solid white;
             padding: 5%;
 
+            img {
+                object-fit: contain;
+            }
+
             color: white;
 
             .exc__title {
