@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @font-face {
   font-family: "Handrawn";
   src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
@@ -480,6 +481,94 @@ button[type=submit]:hover {
   font-family: Handrawn;
 }
 
+.locations__container {
+  padding: 10vh;
+}
+.locations__container .title__text {
+  font-family: "Delicious Handrawn", cursive;
+  color: rgb(222, 212, 212);
+  font-size: 2em;
+  padding-left: 2vh;
+}
+.locations__container .locations__wrapper {
+  padding: 2vh;
+}
+.locations__container .locations__wrapper .locations__card {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.locations__container .locations__wrapper .locations__card .loc__info > * {
+  font-family: "Delicious Handrawn", cursive;
+}
+.locations__container .locations__wrapper .locations__card .loc__info {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px dotted white;
+  padding-left: 1vw;
+  width: 40%;
+}
+.locations__container .locations__wrapper .locations__card .loc__info .loc__title {
+  display: flex;
+  padding-bottom: 1vh;
+  font-size: 20px;
+  text-shadow: 0 2px 0 black, 0 2px 0 black, -2px 0 0 black, 0 -2px 0 black;
+}
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Handrawn;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.tabs > section:not(.tabs__links) {
+  display: none;
+  order: 1;
+}
+
+.tabs > section:target {
+  display: block;
+}
+
+body {
+  background-image: url("../imgs/backgrnd.jpg");
+}
+
+.attractions__container {
+  padding: 10vh;
+}
+.attractions__container .attractions__wrapper {
+  padding: 2vh;
+}
+.attractions__container .attractions__wrapper .title__text {
+  font-family: "Delicious Handrawn", cursive;
+  color: rgb(222, 212, 212);
+  font-size: 6em;
+}
+
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Handrawn;
+}
+
 .hidden {
   display: none;
 }
@@ -523,51 +612,8 @@ button[type=submit]:hover {
 }
 
 .small__pic {
-  width: 25vh;
-  margin-left: 55px;
-}
-
-@font-face {
-  font-family: "Handrawn";
-  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Handrawn;
-  overflow: hidden;
-}
-
-.hidden {
-  display: none;
-}
-
-.tabs > section:not(.tabs__links) {
-  display: none;
-  order: 1;
-}
-
-.tabs > section:target {
-  display: block;
-}
-
-body {
-  background-image: url("../imgs/backgrnd.jpg");
-}
-
-.attractions__container {
-  padding: 10vh;
-}
-.attractions__container .attractions__wrapper {
-  padding: 2vh;
-}
-.attractions__container .attractions__wrapper .title__text {
-  font-family: "Delicious Handrawn", cursive;
-  color: rgb(222, 212, 212);
-  font-size: 6em;
+  width: 15vh;
+  margin-left: 95px;
 }
 
 @font-face {

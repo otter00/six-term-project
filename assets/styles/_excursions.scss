@@ -7,60 +7,47 @@
     font-family: Handrawn;
 }
 
-.hidden {
-    display: none;
-}
+.locations__container {
+    padding: 10vh;
 
-.excursions__container {
-    padding: 7vh 10vh 0 20vh;
-    margin: auto;
+    .title__text {
+        font-family: 'Delicious Handrawn', cursive;
+        color: rgb(222, 212, 212);
+        font-size: 2em;
+        padding-left: 2vh;
+    }
 
-    .excursions__wrapper {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 9px;
+    .locations__wrapper {
+        padding: 2vh;
 
-        .excursion__card {
+        .locations__card {
             display: flex;
             flex-direction: column;
 
-            width: 70%;
-
-            border: 2px dotted white;
-
             color: white;
 
-            .exc__info>* {
+            .loc__info>* {
                 font-family: 'Delicious Handrawn', cursive;
             }
 
-            .exc__info {
+            .loc__info {
                 background-color: rgba(255, 255, 255, 0.3);
+                border: 2px dotted white;
+                padding-left: 1vw;
+                width: 40%;
 
-                .exc__title {
+                .loc__title {
                     display: flex;
-                    justify-content: center;
-                    padding-bottom: 2vh;
+                    padding-bottom: 1vh;
 
                     font-size: 20px;
                     text-shadow: 0 2px 0 black, 0 2px 0 black, -2px 0 0 black, 0 -2px 0 black;
                 }
 
-                .exc__about {
-                    display: none;
-                    padding: 2%;
+                .loc__about {
+                    //padding: 2%;
                 }
-            }
-
-            img {
-                object-fit: contain;
             }
         }
     }
-}
-
-.small__pic {
-    width: 25vh;
-    margin-left: 55px;
 }

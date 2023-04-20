@@ -1,76 +1,45 @@
-const Json = `[{
-    "url":"https://i.ytimg.com/vi/263_XJEhgNQ/maxresdefault.jpg",
-    "title":"Олимп",
-    "about":"Потухший вулкан на Марсе, самая высокая гора в Солнечной системе. Высота Олимпа - 27 км к его основанию.",
+const JsonLoc = `[{
+    "title":"Полежать, играя в Обломовщину",
+    "about":"about",
     "class":"first"
 },{
-    "url":"https://steamuserimages-a.akamaihd.net/ugc/995764848905591363/C95A084481BA30EE2A567B370A130B9FEE9285FA/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true",
-    "title":"Red Grave city",
-    "about":"Ред-Грейв-Сити отличается неоклассической архитектурой, типичной для викторианской эпохи, с некоторыми более старыми сооружениями, такими как кафедральный собор.",
+    "title":"На Кавказ по тропам Лермонтова",
+    "about":"about",
     "class":"second"
 },{
-    "url":"http://www.comgun.ru/uploads/posts/2021-04/1619269820_12.jpg",
-    "title":"Рорайма",
-    "about":"На заповедной территории и на самой вершине можно обнаружить множество уникальных животных и краснокнижных растений. Некоторые из них растут только на плато.",
+    "title":"По-Чеховски изысканно и задумчиво",
+    "about":"about",
     "class":"third"
 },{
-    "url":"https://www.iphones.ru/wp-content/uploads/2019/06/2-1-1.jpg",
-    "title":"Галактика «Сомбреро»",
-    "about":"Этот космический объект крут тем, что внутри него находится сверхмассивная чёрная дыра, которая по массе, как 1 млрд земных Солнц.",
+    "title":"Как истинно Ремарковская фрау",
+    "about":"about",
     "class":"fourth"
 },{
-    "url":"https://i.pinimg.com/originals/66/31/5a/66315a78d7c2be03638435b79f72cff6.jpg",
-    "title":"Беспин",
-    "about":"Облачный город стал центральной точкой в попытке Дарта Вейдера поймать в ловушку Люка Скайуокера.",
+    "title":"Ощути себя Маяковским",
+    "about":"about",
     "class":"fifth"
 },{
-    "url":"https://cdn.mos.cms.futurecdn.net/Xvas2AtmtMk37WYHskDPfE-1920-80.jpg",
-    "title":"Брайт-Фоллс",
-    "about":"Днем не представляет опасности, но как только на город опускается тьма, в местных лесах в людях просыпаются монстры, а призраки вырываются на свободу.",
+    "title":"Выбор по-Чернышевски",
+    "about":"about",
     "class":"sixth"
 }]`;
 
 //add cards into html on dom content loaded
 document.addEventListener('DOMContentLoaded', function (e) {
-    let excursions = JSON.parse(Json);
+    let locations = JSON.parse(JsonLoc);
     //console.log(excursions);
 
-    let excContent = "";
+    let locContent = "";
 
-    for (let exc of excursions) {
-        excContent += 
-        `<div class="excursion__card ${exc.class}-card">
-            <img src=${exc.url} alt="exc__pic">
-
-            <div class="exc__info">
-                <span class="exc__title">${exc.title}</span>
-                <p class="exc__about hidden">${exc.about}</p>
-            </div>
+    for (let location of locations) {
+        locContent += 
+        `<div class="locations__card ${location.class}-card">
+            <details class="loc__info">
+                <summary class="loc__title">${location.title}</summary>
+                <p class="loc__about">${location.about}</p>
+            </details>
         </div>`;
     }
-    //console.log(excContent);
-
-    document.querySelector('.excursions__wrapper').innerHTML = excContent;
-
-    let aboutContainer = Array.from(document.querySelectorAll('.excursion__card'));
-    
-    for(let i = 0; i < aboutContainer.length; i++) {
-        console.log(aboutContainer[i]);
-
-        aboutContainer[i].addEventListener('click', (event) => {
-            //console.log(event.target);
-            let parentDiv = event.target.parentNode;
-            let grand = parentDiv.parentNode;
-            let pic = grand.querySelector('img');
-            //console.log(parentDiv);
-            let about = parentDiv.querySelector('.exc__about');
-            //console.log(about);
-            let title = parentDiv.querySelector('.exc__title');
-            about.style.display = "block";
-            //title.style.display = "none";
-            // pic.style.width = "25vh";
-            // pic.style.display = "flex";
-            // pic.style.justify-content = "flex";
-            pic.classList.add("small__pic");
-    })} 
+    //console.log(locContent);
+    document.querySelector('.locations__wrapper').innerHTML = locContent;
 });
