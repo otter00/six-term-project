@@ -9,6 +9,7 @@
 
 .locations__container {
     padding: 10vh;
+    width: 50%;
 
     .title__text {
         font-family: 'Delicious Handrawn', cursive;
@@ -34,7 +35,7 @@
                 background-color: rgba(255, 255, 255, 0.3);
                 border: 2px dotted white;
                 padding-left: 1vw;
-                width: 40%;
+                width: 90%;
 
                 .loc__title {
                     display: flex;
@@ -42,9 +43,15 @@
 
                     font-size: 20px;
                     text-shadow: 0 2px 0 black, 0 2px 0 black, -2px 0 0 black, 0 -2px 0 black;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .loc__about {
+                    font-size: 18px;
+                    padding-bottom: 1vh;
                     //padding: 2%;
                 }
             }

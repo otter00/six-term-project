@@ -30,6 +30,10 @@
 
             img {
                 object-fit: contain;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
             color: white;

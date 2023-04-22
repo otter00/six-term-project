@@ -45,6 +45,10 @@
 
                     font-size: 20px;
                     text-shadow: 0 2px 0 black, 0 2px 0 black, -2px 0 0 black, 0 -2px 0 black;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .exc__about {
@@ -55,6 +59,10 @@
 
             img {
                 object-fit: contain;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

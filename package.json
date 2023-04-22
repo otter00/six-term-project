@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/otter00/six-term-project#readme",
   "dependencies": {
+    "chart.js": "^4.2.1",
     "classnames": "^2.3.2"
   }
 }
