@@ -25,21 +25,36 @@ const JsonLoc = `[{
 }]`;
 
 //add cards into html on dom content loaded
-document.addEventListener('DOMContentLoaded', function (e) {
-    let locations = JSON.parse(JsonLoc);
-    //console.log(excursions);
+// document.addEventListener('DOMContentLoaded', function (e) {
+//     let locations = JSON.parse(JsonLoc);
+//     //console.log(excursions);
 
-    let locContent = "";
+//     let locContent = "";
 
-    for (let location of locations) {
-        locContent += 
-        `<div class="locations__card ${location.class}-card">
-            <details class="loc__info">
-                <summary class="loc__title">${location.title}</summary>
-                <p class="loc__about">${location.about}</p>
-            </details>
-        </div>`;
-    }
-    //console.log(locContent);
-    document.querySelector('.locations__wrapper').innerHTML = locContent;
-});
+//     for (let location of locations) {
+//         locContent += 
+//         `<div class="locations__card ${location.class}-card">
+//             <details class="loc__info">
+//                 <summary class="loc__title">${location.title}</summary>
+//                 <p class="loc__about">${location.about}</p>
+//             </details>
+//         </div>`;
+//     }
+//     //console.log(locContent);
+//     document.querySelector('.locations__wrapper').innerHTML = locContent;
+// });
+
+let wrongBtns = Array.from(document.querySelectorAll('#wrong-btn'));
+console.log(wrongBtns);
+
+for (let i = 0; i < wrongBtns.length; i++) {
+    wrongBtns[i].addEventListener('click', ()=>{
+        alert('Мимо');
+    });
+}
+
+let rightBtn = document.querySelector('#right-btn');
+
+rightBtn.addEventListener('click', ()=>{
+    window.location.href = '../pages/locations.html';
+})

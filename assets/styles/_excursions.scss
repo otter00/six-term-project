@@ -8,18 +8,46 @@
 }
 
 .locations__container {
-    padding: 10vh;
-    width: 50%;
+    padding: 5vh 10vh 10vh 10vh;
+    //width: 50%;
 
     .title__text {
         font-family: 'Delicious Handrawn', cursive;
         color: rgb(222, 212, 212);
-        font-size: 2em;
-        padding-left: 2vh;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2vh;
+        //padding-left: 2vh;
     }
 
     .locations__wrapper {
         padding: 2vh;
+
+        // GRID FOR BUTTONS //
+        display: grid;
+        grid-template-rows: repeat(10, 1fr);
+
+        button {
+            width: 15vw;
+            height: 6vh;
+            background: -webkit-linear-gradient(left, #00360e, #004d13, #351600);
+            font-family: 'Delicious Handrawn', cursive;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: $main-color;
+            text-align: center;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .button__container {
+            display: flex;
+            justify-content: space-around;
+        }
 
         .locations__card {
             display: flex;
