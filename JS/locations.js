@@ -30,6 +30,8 @@ const Json = `[{
     "class":"sixth"
 }]`;
 
+let image = document.querySelector('img');
+
 //add cards into html on dom content loaded
 document.addEventListener('DOMContentLoaded', function (e) {
     let excursions = JSON.parse(Json);
@@ -57,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
     // to make pic smaller we need to click the title
     for(let i = 0; i < aboutContainer.length; i++) {
         console.log(aboutContainer[i]);
-        aboutContainer[i].addEventListener('click', (event) => {
+        aboutContainer[i].addEventListener('mouseover', (event) => {
             //console.log(event.target);
             let parentDiv = event.target.parentNode;
             let grand = parentDiv.parentNode;
@@ -71,9 +73,9 @@ document.addEventListener('DOMContentLoaded', function (e) {
             // for(let i = 0; i < about.length; i++) {
             //     about[i].style.display = "block";
             // }
+            pic.style.display = "none";
             about.style.display = "block";
-            pic.classList.add("small__pic");
+            //pic.classList.add("small__pic");
             //title.style.display = "none";
-
     })} 
 });

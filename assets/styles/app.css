@@ -583,27 +583,26 @@ body {
 }
 
 .excursions__container {
-  padding: 7vh 10vh 0 20vh;
+  padding: 7vh 10vh 0 15vh;
   margin: auto;
 }
 .excursions__container .excursions__wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 9px;
+  row-gap: 25px;
+  column-gap: 10px;
 }
 .excursions__container .excursions__wrapper .excursion__card {
   display: flex;
   flex-direction: column;
   width: 70%;
+  height: 100%;
   border: 2px dotted white;
   color: white;
 }
 .excursions__container .excursions__wrapper .excursion__card .exc__info > * {
   font-family: "Delicious Handrawn", cursive;
-}
-.excursions__container .excursions__wrapper .excursion__card .exc__info {
-  background-color: rgba(255, 255, 255, 0.3);
 }
 .excursions__container .excursions__wrapper .excursion__card .exc__info .exc__title {
   display: flex;
@@ -629,6 +628,25 @@ body {
 .small__pic {
   width: 15vh;
   margin-left: 95px;
+}
+
+.excursion__card.first-card {
+  background-color: rgba(255, 137, 137, 0.574);
+}
+.excursion__card.second-card {
+  background-color: rgba(255, 198, 137, 0.574);
+}
+.excursion__card.third-card {
+  background-color: rgba(255, 239, 137, 0.574);
+}
+.excursion__card.fourth-card {
+  background-color: rgba(137, 255, 178, 0.574);
+}
+.excursion__card.fifth-card {
+  background-color: rgba(137, 204, 255, 0.574);
+}
+.excursion__card.sixth-card {
+  background-color: rgba(225, 137, 255, 0.574);
 }
 
 @font-face {
