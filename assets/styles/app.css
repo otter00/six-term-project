@@ -746,7 +746,7 @@ body {
 .movies__popular {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin: 30px;
+  margin: 60px 30px 30px 30px;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -773,12 +773,12 @@ body {
 .movie__link {
   text-decoration: none;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 13px;
   background-color: rgba(156, 201, 215, 0.67);
-  color: #594444;
+  color: white;
 }
 .movie__link:hover {
-  background-color: #3a3a3a;
+  background-color: #494949;
 }
 .movie__description {
   margin: 20px 50px;
