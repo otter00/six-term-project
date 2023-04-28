@@ -11,7 +11,7 @@ const JsonLoc = `[{
     "urlAlternate":"https://sun9-8.userapi.com/impg/Fn1MiSaalP3CjerLiEit_nlAeKVkOL4IAfdgoQ/sGH92gYEekg.jpg?size=1000x1000&quality=95&sign=780dd10ea882a4151aa5dcc9b086bfa5&type=album",
     "url":"https://i.klubgidov.ru/800x960/82/b0/82b0a09c00cb391d8a8468785251c986.jpeg"
 },{
-    "title":"По-Чеховски изысканно и задумчиво",
+    "title":"По-Чеховски задумчиво",
     "about":"Замечательный день сегодня. То ли чаю пойти выпить, то ли повеситься...",
     "class":"third",
     "urlAlternate":"https://sun9-35.userapi.com/impg/z_f_hHnBmIxJxcowLT0o6lyNrQO5Sn6AGPoaew/tjquwdigBoE.jpg?size=1030x804&quality=95&sign=361b470f8e705e55908184ed134e590e&type=album",
@@ -37,37 +37,48 @@ const JsonLoc = `[{
     "url":"https://i.pinimg.com/originals/86/d0/a1/86d0a17b45aa09b622516df48128c326.jpg"
 }]`;
 
-//add cards into html on dom content loaded
-// document.addEventListener('DOMContentLoaded', function (e) {
-//     let locations = JSON.parse(JsonLoc);
-//     //console.log(excursions);
+//Ссылка на payment.html в JSON'е, по-другому добавление через js не работает 
+var guideRedirectLink = `[{
+    "link": "../pages/guide.html"
+}]`;
 
-//     let locContent = "";
+document.addEventListener('DOMContentLoaded', (e)=>{
+    const locations = JSON.parse(JsonLoc);
+    console.log(locations.length);
+    let moviesContent = "";
+    let GuideHref = JSON.parse(guideRedirectLink); //guide.html link
 
-//     for (let location of locations) {
-//         locContent += 
-//         `<div class="locations__card ${location.class}-card">
-//             <details class="loc__info">
-//                 <summary class="loc__title">${location.title}</summary>
-//                 <p class="loc__about">${location.about}</p>
-//             </details>
-//         </div>`;
-//     }
-//     //console.log(locContent);
-//     document.querySelector('.locations__wrapper').innerHTML = locContent;
-// });
+                for (let i = 0; i < locations.length; i++) {
+                moviesContent += `
+                <div class = "movie">
+                    <p class="movie__rating">${locations[i].title}</p>
+                    <img class = "movie__img" src =${locations[i].url}>
+                    <div class = "movie2">
+                        <div>
+                            <p class="movie__name">${locations[i].title}</p>
+                            <img class = "movie__img" src =${locations[i].urlAlternate}>
+                            <p class="movie__description">${locations[i].about}</p>
+                            <a href='${GuideHref[0].link}' class="movie__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                `
+            }
+            document.querySelector(".movies__popular").innerHTML = moviesContent;
+});
 
-let wrongBtns = Array.from(document.querySelectorAll('#wrong-btn'));
-console.log(wrongBtns);
-
-for (let i = 0; i < wrongBtns.length; i++) {
-    wrongBtns[i].addEventListener('click', ()=>{
-        alert('Мимо');
-    });
-}
-
-let rightBtn = document.querySelector('#right-btn');
-
-rightBtn.addEventListener('click', ()=>{
-    window.location.href = '../pages/locations.html';
-})
+//Модальное окно
+const movieContainer = document.querySelector('.movies');
+movieContainer.addEventListener('click', (event) => {
+    if (event.target.classList.contains('movie__img')) {
+        const parentDiv = event.target.parentNode;
+        //console.log(parentDiv)
+        let movie2 = parentDiv.querySelector(".movie2");
+        movie2.style.display = "block";
+        window.onclick = function (event) {
+            if (event.target == movie2) {
+                movie2.style.display = "none";
+            }
+        }
+    }
+});
