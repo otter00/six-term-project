@@ -36,6 +36,10 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    input {
+        width: 95%;
+    }
 }
 
 .contact__input {
