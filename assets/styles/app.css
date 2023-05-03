@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
 @font-face {
   font-family: "Handrawn";
   src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
@@ -63,7 +65,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 5px;
   /*      BG-POSITIONING     */
   background-repeat: no-repeat;
   background-position: center;
@@ -109,7 +111,7 @@ h2 {
   width: 100%;
   position: relative;
   border-bottom: 1px solid #e6e6e6;
-  padding: 29px 0;
+  padding: 17px 0;
 }
 .wrap-input .input {
   font-family: Handrawn;
@@ -574,16 +576,80 @@ body {
   background-image: url("../imgs/backgrnd.jpg");
 }
 
-.attractions__container {
-  padding: 10vh;
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-.attractions__container .attractions__wrapper {
-  padding: 2vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attractions__container {
+  padding: 3vh 7vw;
 }
 .attractions__container .attractions__wrapper .title__text {
   font-family: "Delicious Handrawn", cursive;
-  color: rgb(222, 212, 212);
-  font-size: 6em;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  .title__text {
+    font-size: 3em;
+    padding: 6px;
+  }
+  .attractions__statistics {
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 7vw;
+  }
+  .statistics__pic {
+    width: 70vw;
+  }
+  .statistics__info {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .statistics__info .info__span {
+    font-size: 24px;
+  }
+  .statistics__info .info__sub {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1050px) {
+  .title__text {
+    font-size: 4em;
+    padding: 10px;
+  }
+  .attractions__statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 7vh 7vw;
+  }
+  .statistics__pic {
+    width: 70%;
+  }
+  .statistics__info {
+    width: 30%;
+  }
+  .statistics__info .info__span {
+    font-size: 24px;
+  }
+  .statistics__info .info__sub {
+    margin-top: 10px;
+  }
+}
+span,
+p {
+  color: white;
+  font-family: "Delicious Handrawn", cursive;
 }
 
 @font-face {
@@ -601,6 +667,14 @@ body {
 
 .hidden {
   display: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
 }
 
 .excursions__container {
@@ -624,6 +698,9 @@ body {
 }
 .excursions__container .excursions__wrapper .excursion__card .exc__info > * {
   font-family: "Delicious Handrawn", cursive;
+}
+.excursions__container .excursions__wrapper .excursion__card .exc__info {
+  font-family: "Delicious Handrawn";
 }
 .excursions__container .excursions__wrapper .excursion__card .exc__info .exc__title {
   display: flex;
@@ -811,4 +888,160 @@ body {
 
 .movie2 .movie__name {
   margin-bottom: 30px;
+}
+
+@font-face {
+  font-family: "Handrawn";
+  src: url("../fonts/DeliciousHandrawn/DeliciousHandrawn-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(5, max-content);
+  row-gap: 120px;
+}
+
+/*CONTACT*/
+.contact {
+  padding: 7vh 7vw;
+  width: 80%;
+  margin: auto;
+}
+
+.contact__title {
+  padding-bottom: 20px;
+  color: white;
+  font-weight: 400;
+}
+
+.contact__content {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  grid-template-rows: 1fr 120px;
+  margin-bottom: 15px;
+}
+
+#contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__input {
+  width: 95%;
+  height: 12%;
+}
+
+.contact__textarea {
+  width: 95%;
+  height: 38%;
+}
+
+.contact__images {
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact__background {
+  width: 100%;
+}
+
+.contact__btn-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1em;
+  letter-spacing: 0.04em;
+  padding-left: 5px;
+  padding-top: 10px;
+  color: #8D8D8D;
+}
+
+.contact__input {
+  background: #F3F3F3;
+  border: none;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  outline: none;
+}
+
+.contact__textarea {
+  background: #F3F3F3;
+  border: none;
+}
+
+.section__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 222px;
+  height: 71px;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 0.75em;
+  line-height: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.section__btn--light {
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.section__btn--dark {
+  color: white;
+  background-color: #2C2C2C;
+}
+
+.section__btn--light:hover {
+  background-color: #c8c6c6;
+}
+
+.section__btn--dark:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  color: white;
+  font-weight: lighter;
+}
+
+textarea {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 12px 20px;
 }/*# sourceMappingURL=app.css.map */

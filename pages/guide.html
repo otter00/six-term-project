@@ -27,7 +27,7 @@
                         <li><a class="header__link attr" href="#content-3">Достопримечательности</a></li>
                         <li><a class="header__link locations" href="#content-2">Локации</a></li>
                         <li><a class="header__link gallery" href="#content-4">Фотогалерея</a></li>
-                        <li><a class="header__link contacts" href="#">Контакты</a></li>
+                        <li><a class="header__link contacts" href="#content-6">Контакты</a></li>
                         <li><a class="header__link account" href="#">Мой аккаунт</a></li>
                         <li><a class="header__link logout" href="../index.html">Выйти</a></li>
                         <div class="search-container">
@@ -63,6 +63,18 @@
     <section class="attractions__container" id="content-3">
         <div class="attractions__wrapper">
             <span class="title__text">Никуда не едь - побудь дома!</span>
+
+            <div class="attractions__statistics">
+                <img class="staticstics__pic" src="../assets/imgs/chart.jpg" alt="staticstics__pic">
+                <div class="statistics__info">
+                    <span class="info__span">По статистике, любая
+                        бесполезная диаграмма способна не только привлечь взгляд
+                        пользователя, но и создать впечатление, что перед ним серьёзная
+                        контора, а не лохи какие-то
+                    </span>
+                    <p class="info__sub">*но это не точно</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -117,6 +129,26 @@
             </div>
         </div>
         <div class="locations__pic"></div>
+    </section>
+
+    <section class="contacts__container main" id="content-6">
+        <section class="contact">
+            <h2 class="contact__title title-text"> Contact Us</h2>
+            <div class="contact__content">
+                <form id="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input">
+                    <input type="text" name="phone" placeholder="Phone Number*" class="contact__input" required>
+                    <input type="email" name="email" placeholder="E-mail*" class="contact__input" required>
+                    <textarea name="message" placeholder="Message*" class="contact__textarea" required></textarea>
+                </form>
+                <div class="contact__images">
+                    <img class="contact__background" src="../assets/imgs/contact_img.png" alt="Background image">
+                </div>
+                <div class="contact__btn-container">
+                    <button class="section__btn section__btn--dark" form="contact__form">Send Email &rarr;</button>
+                </div>
+            </div>
+        </section>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

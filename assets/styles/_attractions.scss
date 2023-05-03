@@ -1,13 +1,90 @@
+@import 'vars.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+* {
+    @include reset;
+}
+
 .attractions__container {
-    padding: 10vh;
+    padding: 3vh 7vw;
 
     .attractions__wrapper {
-        padding: 2vh;
 
         .title__text {
             font-family: 'Delicious Handrawn', cursive;
-            color: rgb(222, 212, 212);
-            font-size: 6em;
+            color: $main-color;
+
+            display: flex;
+            justify-content: center;
         }
     }
+}
+
+@media (max-width: 1050px) {
+    .title__text {
+        font-size: 3em;
+        padding: 6px;
+    }
+
+    .attractions__statistics {
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 7vw;
+    }
+
+    .statistics__pic {
+        width: 70vw;
+    }
+
+    .statistics__info {
+        width: 100%;
+        margin-top: 5px;
+
+        .info__span {
+            font-size: 24px;
+        }
+
+        .info__sub {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media (min-width: 1050px) {
+
+    .title__text {
+        font-size: 4em;
+        padding: 10px;
+    }
+
+    .attractions__statistics {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        padding: 7vh 7vw;
+    }
+
+    .statistics__pic {
+        width: 70%;
+    }
+
+    .statistics__info {
+        width: 30%;
+
+        .info__span {
+            font-size: 24px;
+        }
+
+        .info__sub {
+            margin-top: 10px;
+        }
+    }
+}
+
+span,
+p {
+    color: $main-color;
+    font-family: 'Delicious Handrawn', cursive;
 }
