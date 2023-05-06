@@ -32,3 +32,7 @@ $(window).scroll(function(e) {
     }
     updateSpotlight(e, xMouse, yMouse);
 });
+
+document.querySelector('.account__info').addEventListener('click', ()=>{
+    //alert('OOOOPS')
+});
