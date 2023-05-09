@@ -33,7 +33,7 @@
         position: absolute;
         height: 100vh;
         width: 100%;
-        //background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 
         .account__container {
             margin: 20vh 20vw;
@@ -98,14 +98,18 @@
 
 .content {
     font-size: 21px;
-    color: $main-color;
-    border: 1px solid $main-color;
+    color: rgba(244, 241, 241, 0.411);
+    border: 1px solid rgba(244, 241, 241, 0.134);
     border-radius: 15px;
 
     padding: 2.5vh 1.5vw;
     margin: 1.9em 3em 0.5em;
 
-    background-color: #3232329e;
+    &:hover {
+        border: 1px solid rgba(244, 241, 241, 0.411);
+        //background-color: #3232326d;
+        transition: background-color 0.5s;
+    }
 }
 
 .profile__settings,
@@ -121,15 +125,28 @@
     width: 100%;
 
     p {
-        border: 1px solid $main-color;
+        border: 1px solid rgba(244, 241, 241, 0.151);
         border-radius: 15px;
         padding: 10px;
         margin: 10px;
+        color: #aaaaaa39;
+
+        &:hover {
+            border: 1px solid rgba(244, 241, 241, 0.411);
+            transition: color 0.5s;
+            color: rgba(244, 241, 241, 0.719);
+        }
     }
 
     .profile__photo {
         width: 15vw;
         border-radius: 15px;
+        opacity: 0.3;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
     }
 
     .profile__info {
@@ -150,14 +167,32 @@
 
         .privacy__message {
             font-size: 2em;
-            color: rgb(185, 23, 23);
+            color: rgba(185, 23, 23, 0.327);
+
+            &:hover {
+                color: rgba(185, 23, 23, 0.895);
+                transition: color 0.8s;
+                font-weight: 600;
+            }
+        }
+
+        .privacy__help {
+            color: rgba(244, 241, 241, 0.084);
+
+            &:hover {
+                transition: color 0.8s;
+                color: rgba(244, 241, 241, 0.719);
+            }
         }
 
         .help__button {
             margin: 25px;
-            transition: background-color 0.3s;
+            transition: background-color 0.8s;
+            color: rgba(244, 241, 241, 0.081);
 
             &:hover {
+                transition: color 0.8s;
+                color: rgba(244, 241, 241, 0.719);
                 background-color: #140f749d;
             }
         }
@@ -167,12 +202,25 @@
 .feedback__settings {
     .feedback__logo {
         padding: 0 15px;
+        opacity: 0;
+
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.8s;
+        }
     }
 
     span {
         padding: 10px;
         margin: 5px 10px 0px 10px;
         font-size: 14px;
+
+        color: rgba(144, 144, 144, 0.4);
+
+        &:hover {
+            color: rgba(214, 214, 214, 0.774);
+            transition: color 0.8s;
+        }
     }
 
     .feedback__info {
@@ -181,11 +229,29 @@
         margin: 0 25px;
 
         input {
-            background: #3232329e;
+            background: #3232321b;
+            border: 1px solid rgba(144, 144, 144, 0.4);
+            margin-bottom: 15px;
 
             &:hover {
                 background-color: #d1d1d19d;
+                border: 1px solid rgba(144, 144, 144, 0.926);
                 transition: background-color 0.5s;
+            }
+        }
+
+        #feedback__send {
+            width: 70%;
+            margin: auto;
+            height: 6vh;
+            border-radius: 10px;
+            background-color: rgba(144, 144, 144, 0.13);
+            color: rgba(255, 255, 255, 0.31);
+            transition: background-color 0.8s;
+
+            &:hover {
+                background-color: rgba(144, 144, 144, 0.458);
+                color: rgba(195, 195, 195, 0.926);
             }
         }
     }
