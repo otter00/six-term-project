@@ -80,9 +80,3 @@ document.addEventListener('DOMContentLoaded', function (e) {
 
     
 });
-
-
-
-// document.addEventListener('mouseover', ()=>{
-
-// });

@@ -34,5 +34,5 @@ $(window).scroll(function(e) {
 });
 
 document.querySelector('.account__info').addEventListener('click', ()=>{
-    //alert('OOOOPS')
+    alert('Вообще без понятия, что это за окошко');
 });

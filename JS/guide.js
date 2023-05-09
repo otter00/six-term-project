@@ -1,7 +1,7 @@
 //      НЕ ЗАБЫТЬ РАСКОММЕНТИРОВАТЬ         
 
 document.addEventListener('DOMContentLoaded', ()=> {
-    //setTimeout(() => alert('Здравствуйте! Наши двери всегда для вас открыты - выходите!'), 1000);
+    setTimeout(() => alert('Здравствуйте! Наши двери всегда для вас открыты - выходите!'), 1000);
 });
 
 let heroBlock = document.querySelector('.hero-block__container');
