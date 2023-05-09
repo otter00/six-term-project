@@ -1148,26 +1148,31 @@ textarea {
 }
 
 .profile__settings,
-.privacy__settings {
+.privacy__settings,
+.feedback__settings {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.profile__settings {
+.profile__settings,
+.feedback__settings {
   width: 100%;
 }
-.profile__settings p {
+.profile__settings p,
+.feedback__settings p {
   border: 1px solid white;
   border-radius: 15px;
   padding: 10px;
   margin: 10px;
 }
-.profile__settings .profile__photo {
+.profile__settings .profile__photo,
+.feedback__settings .profile__photo {
   width: 15vw;
   border-radius: 15px;
 }
-.profile__settings .profile__info {
+.profile__settings .profile__info,
+.feedback__settings .profile__info {
   margin: auto;
   padding: 20px;
 }
@@ -1189,4 +1194,17 @@ textarea {
 }
 .settings .privacy__settings .help__button:hover {
   background-color: rgba(20, 15, 116, 0.6156862745);
+}
+
+.feedback__settings .feedback__logo {
+  padding: 0 15px;
+}
+.feedback__settings span {
+  padding: 10px;
+  margin: 15px 10px 0px 10px;
+  font-size: 14px;
+}
+.feedback__settings p:hover {
+  background-color: rgba(209, 209, 209, 0.6156862745);
+  transition: background-color 0.5s;
 }/*# sourceMappingURL=app.css.map */

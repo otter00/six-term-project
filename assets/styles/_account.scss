@@ -109,13 +109,15 @@
 }
 
 .profile__settings,
-.privacy__settings {
+.privacy__settings,
+.feedback__settings {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.profile__settings {
+.profile__settings,
+.feedback__settings {
     width: 100%;
 
     p {
@@ -159,5 +161,22 @@
                 background-color: #140f749d;
             }
         }
+    }
+}
+
+.feedback__settings {
+    .feedback__logo {
+        padding: 0 15px;
+    }
+
+    span {
+        padding: 10px;
+        margin: 15px 10px 0px 10px;
+        font-size: 14px;
+    }
+
+    p:hover {
+        background-color: #d1d1d19d;
+        transition: background-color 0.5s;
     }
 }

@@ -47,6 +47,10 @@ let checkTabs = (item) => {
 
 tabs.forEach(checkTabs);
 
+document.querySelector('.help__button').addEventListener('click', ()=>{
+    alert('Поздравляем, у вас троянец!');
+})
+
 
 // const clearActiveClass = (element, className = 'hidden') => {
 //     element.find(item => item.classList.remove(`${className}`))
