@@ -171,12 +171,22 @@
 
     span {
         padding: 10px;
-        margin: 15px 10px 0px 10px;
+        margin: 5px 10px 0px 10px;
         font-size: 14px;
     }
 
-    p:hover {
-        background-color: #d1d1d19d;
-        transition: background-color 0.5s;
+    .feedback__info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 25px;
+
+        input {
+            background: #3232329e;
+
+            &:hover {
+                background-color: #d1d1d19d;
+                transition: background-color 0.5s;
+            }
+        }
     }
 }

@@ -1201,10 +1201,18 @@ textarea {
 }
 .feedback__settings span {
   padding: 10px;
-  margin: 15px 10px 0px 10px;
+  margin: 5px 10px 0px 10px;
   font-size: 14px;
 }
-.feedback__settings p:hover {
+.feedback__settings .feedback__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+.feedback__settings .feedback__info input {
+  background: rgba(50, 50, 50, 0.6196078431);
+}
+.feedback__settings .feedback__info input:hover {
   background-color: rgba(209, 209, 209, 0.6156862745);
   transition: background-color 0.5s;
 }/*# sourceMappingURL=app.css.map */
