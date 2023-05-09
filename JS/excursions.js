@@ -37,26 +37,6 @@ const JsonLoc = `[{
     "url":"https://i.pinimg.com/originals/86/d0/a1/86d0a17b45aa09b622516df48128c326.jpg"
 }]`;
 
-//add cards into html on dom content loaded
-// document.addEventListener('DOMContentLoaded', function (e) {
-//     let locations = JSON.parse(JsonLoc);
-//     //console.log(excursions);
-
-//     let locContent = "";
-
-//     for (let location of locations) {
-//         locContent += 
-//         `<div class="locations__card ${location.class}-card">
-//             <details class="loc__info">
-//                 <summary class="loc__title">${location.title}</summary>
-//                 <p class="loc__about">${location.about}</p>
-//             </details>
-//         </div>`;
-//     }
-//     //console.log(locContent);
-//     document.querySelector('.locations__wrapper').innerHTML = locContent;
-// });
-
 let wrongBtns = Array.from(document.querySelectorAll('#wrong-btn'));
 console.log(wrongBtns);
 

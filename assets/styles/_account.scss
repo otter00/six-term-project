@@ -25,7 +25,7 @@
         text-shadow: 0 0 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.5);
 
         &:hover {
-            color: #aaaaaa8d;
+            color: #adadadb3;
         }
     }
 
@@ -33,7 +33,7 @@
         position: absolute;
         height: 100vh;
         width: 100%;
-        background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        //background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 
         .account__container {
             margin: 20vh 20vw;
@@ -49,7 +49,7 @@
                 font-weight: 400;
 
                 &:hover {
-                    color: #aaaaaa8d;
+                    color: #adadadb3;
                 }
             }
 
@@ -62,8 +62,8 @@
                 transition: color 0.5s;
 
                 &:hover {
-                    color: #aaaaaa8d;
-                    border: 1px solid rgba(193, 193, 193, 0.777);
+                    color: #adadadb3;
+                    border: 1px solid rgba(244, 241, 241, 0.86);
                 }
             }
 
@@ -84,7 +84,79 @@
                 &:hover {
                     color: #aaaaaa8d;
                     border: 1px solid rgba(193, 193, 193, 0.304);
+
+
+                    &::placeholder {
+                        color: #adadadb3;
+                        transition: color 0.5s;
+                    }
                 }
+            }
+        }
+    }
+}
+
+.content {
+    font-size: 21px;
+    color: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 15px;
+
+    padding: 2.5vh 1.5vw;
+    margin: 1.9em 3em 0.5em;
+
+    background-color: #3232329e;
+}
+
+.profile__settings,
+.privacy__settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile__settings {
+    width: 100%;
+
+    p {
+        border: 1px solid $main-color;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .profile__photo {
+        width: 15vw;
+        border-radius: 15px;
+    }
+
+    .profile__info {
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+.settings {
+    width: 80%;
+
+    .privacy__settings {
+
+        .privacy__message,
+        .privacy__info {
+            padding: 15px;
+        }
+
+        .privacy__message {
+            font-size: 2em;
+            color: rgb(185, 23, 23);
+        }
+
+        .help__button {
+            margin: 25px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #140f749d;
             }
         }
     }

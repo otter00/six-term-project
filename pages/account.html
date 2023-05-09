@@ -14,27 +14,57 @@
     <title>My Account</title>
 </head>
 
-<body>
+<body class="account__tabs">
     <div class="spotlight-wrap">
+
         <a href="../pages/guide.html">Оставь надежду, <br />всяк сюда входящий</a>
         <div class="spotlight account">
             <div class="account__container">
                 <aside class="account__navigation">
                     <h2 class="account__settings">Account settings:</h2>
                     <div class="nav__option profile">Профиль</div>
-                    <div class="nav__option security">Настройки приватности</div>
+                    <div class="nav__option privacy">Настройки приватности</div>
                     <div class="nav__option favs">Избранное</div>
                     <div class="nav__option notiications">Уведомления</div>
                     <div class="nav__option feedback">Обратная связь</div>
                 </aside>
 
-                <textarea class="account__info" placeholder="Сюда можно ввести что угодно"></textarea>
+                <textarea class="account__info" id="account__content-0" placeholder="Сюда можно ввести что угодно">
+                </textarea>
+
+                <section class="content profile hidden" id="account__content-1">
+                    <div class="profile__settings">
+                        <img src="../assets/imgs/profile.jpg" class="profile__photo" alt="profile__img">
+                        <div class="profile__info">
+                            <p class="profile__name">Name: Anastasia</p>
+                            <p class="profile__gender">Gender: women</p>
+                            <p class="country">From: Slovenia</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content settings hidden" id="account__content-2">
+                    <div class="privacy__settings">
+                        <p class="privacy__message">
+                            Ахтунг! Ваш аккаунт вам больше не принадлежит!
+                        </p>
+                        <div class="privacy__info">
+                            <span class="privacy__help">Чтобы восстановить доступ, достаточно просто...</span>
+                            <button class="help__button" type="submit">Don't touch me</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content feedback hidden" id="account__content-3">3</section>
+
             </div>
         </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="../JS/account.js"></script>
+    <!-- <script src="../JS/account.js"></script> -->
+    <script src="../JS/account__tabs.js"></script>
 </body>
 
 </html>
